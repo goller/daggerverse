@@ -1,4 +1,7 @@
 {
   "name": "useflags",
-  "sdk": "go"
+  "sdk": "go",
+  "dependencies": [
+    "github.com/goller/daggerverse/flags@3b038677fb82c79f9e444c9e6e2bdc43f2b34927"
+  ]
 }

@@ -1,16 +1,16 @@
 package main
 
-type UseFlags struct{}
+type Useflags struct{}
 
 // example usage: "dagger call style-1"
-func (m *UseFlags) Style1() *Container {
+func (m *Useflags) Style1() *Container {
 	return dag.
-		MyFeature().
+		Flags().
 		WithFlag1("howdy").
 		Style1()
 }
 
 // example usage: "dagger call style-2"
-func (m *UseFlags) Style2() *Container {
-	return dag.MyFeature().Style2(MyFeatureStyle2Opts{Flag1: "howdy"})
+func (m *Useflags) Style2() *Container {
+	return dag.Flags().Style2(FlagsStyle2Opts{Flag1: "howdy"})
 }
